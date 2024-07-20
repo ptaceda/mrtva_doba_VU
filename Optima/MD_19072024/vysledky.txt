@@ -1,14 +1,13 @@
-Vysledky mereni mrtve doby:
-Typ_Datum_kamera    Hlava_okno  Pocet_akum_impulsu  Acq_time  Count_rate
-MD_19072024_Optima   Head1_EM  237663 13.468 17646.5
-MD_19072024_Optima   Head1_SC1  34938 13.468 2594.15
-MD_19072024_Optima   Head1_SC2  37225 13.468 2763.96
-MD_19072024_Optima   Head2_EM 104487 13.468 7758.17
-MD_19072024_Optima   Head2_SC1 16369 13.468 1215.4
-MD_19072024_Optima   Head2_SC2 20134 13.468 1494.95
-Pozadi_19072024_Optima   Head1_EM  12057 600.0 20.1
-Pozadi_19072024_Optima   Head1_SC1  3064 600.0 5.11
-Pozadi_19072024_Optima   Head1_SC2  3654 600.0 6.09
-Pozadi_19072024_Optima   Head2_EM 10154 600.0 16.92
-Pozadi_19072024_Optima   Head2_SC1 2470 600.0 4.12
-Pozadi_19072024_Optima   Head2_SC2 3069 600.0 5.12
+Typ_Datum_Kamera    Hlava_okno   Count_rate
+MD_19072024_Optima   Head1_EM   17646.5
+MD_19072024_Optima   Head1_SC1   2594.15
+MD_19072024_Optima   Head1_SC2   2763.96
+MD_19072024_Optima   Head2_EM  7758.17
+MD_19072024_Optima   Head2_SC1  1215.4
+MD_19072024_Optima   Head2_SC2  1494.95
+Pozadi_19072024_Optima   Head1_EM   20.1
+Pozadi_19072024_Optima   Head1_SC1   5.11
+Pozadi_19072024_Optima   Head1_SC2   6.09
+Pozadi_19072024_Optima   Head2_EM  16.92
+Pozadi_19072024_Optima   Head2_SC1  4.12
+Pozadi_19072024_Optima   Head2_SC2  5.12
