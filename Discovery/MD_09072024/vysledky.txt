@@ -1,0 +1,14 @@
+Vysledky mereni mrtve doby:
+Typ_Datum_kamera    Hlava_okno  Pocet_akum_impulsu  Acq_time  Count_rate
+MD_09072024_Discovery   Head1_EM  165893 6.235 26606.74
+MD_09072024_Discovery   Head1_SC1  24850 6.235 3985.57
+MD_09072024_Discovery   Head1_SC2  26703 6.235 4282.76
+MD_09072024_Discovery   Head2_EM 100281 6.235 16083.56
+MD_09072024_Discovery   Head2_SC1 15566 6.235 2496.55
+MD_09072024_Discovery   Head2_SC2 19196 6.235 3078.75
+Pozadi_09072024_Discovery   Head1_EM  14417 600.0 24.03
+Pozadi_09072024_Discovery   Head1_SC1  3562 600.0 5.94
+Pozadi_09072024_Discovery   Head1_SC2  4439 600.0 7.4
+Pozadi_09072024_Discovery   Head2_EM 12750 600.0 21.25
+Pozadi_09072024_Discovery   Head2_SC1 2877 600.0 4.8
+Pozadi_09072024_Discovery   Head2_SC2 3896 600.0 6.49

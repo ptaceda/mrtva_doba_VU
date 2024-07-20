@@ -1,0 +1,14 @@
+Vysledky mereni mrtve doby:
+Typ_Datum_kamera    Hlava_okno  Pocet_akum_impulsu  Acq_time  Count_rate
+MD_08072024_Optima   Head1_EM  164995 5.942 27767.59
+MD_08072024_Optima   Head1_SC1  25801 5.942 4342.14
+MD_08072024_Optima   Head1_SC2  26562 5.942 4470.21
+MD_08072024_Optima   Head2_EM 99524 5.942 16749.24
+MD_08072024_Optima   Head2_SC1 16618 5.942 2796.7
+MD_08072024_Optima   Head2_SC2 19230 5.942 3236.28
+Pozadi_08072024_Optima   Head1_EM  11750 600.0 19.58
+Pozadi_08072024_Optima   Head1_SC1  2967 600.0 4.94
+Pozadi_08072024_Optima   Head1_SC2  3719 600.0 6.2
+Pozadi_08072024_Optima   Head2_EM 10062 600.0 16.77
+Pozadi_08072024_Optima   Head2_SC1 2445 600.0 4.08
+Pozadi_08072024_Optima   Head2_SC2 3127 600.0 5.21
