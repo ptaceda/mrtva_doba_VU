@@ -1,0 +1,13 @@
+Typ_Datum_Kamera    Hlava_okno   Count_rate
+MD_21072024_Optima   Head1_EM   15643.97
+MD_21072024_Optima   Head1_SC1   2257.78
+MD_21072024_Optima   Head1_SC2   2438.63
+MD_21072024_Optima   Head2_EM  6733.52
+MD_21072024_Optima   Head2_SC1  1050.58
+MD_21072024_Optima   Head2_SC2  1287.87
+Pozadi_21072024_Optima   Head1_EM   19.77
+Pozadi_21072024_Optima   Head1_SC1   5.02
+Pozadi_21072024_Optima   Head1_SC2   6.15
+Pozadi_21072024_Optima   Head2_EM  17.01
+Pozadi_21072024_Optima   Head2_SC1  4.19
+Pozadi_21072024_Optima   Head2_SC2  5.4
