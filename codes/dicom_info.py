@@ -1,11 +1,12 @@
 import pydicom
 
 # Path to your DICOM file
-dicom_file_path = '/Users/danielptacek/Library/CloudStorage/OneDrive-ČeskévysokéučenítechnickévPraze/Vyzkumny_ukol/mereni_mrtve_doby/data/Optima/MD_08.07.2024/Pozadi_08.07.2024_Optima.dcm'
+dicom_file_path = 'Discovery/MD_08072024_povedene/MD_08072024_Discovery.dcm'
 
 # Read the DICOM file
 try:
     dataset = pydicom.dcmread(dicom_file_path)
+    print(dataset)
     
     # Check if (0011, 1012) tag exists
     if (0x0011, 0x1012) in dataset:
