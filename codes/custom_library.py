@@ -137,7 +137,7 @@ class Graf_1_2:
         self.fig[1].set_xlabel(self.xlabel_2)
         self.fig[1].set_ylabel(self.ylabel_2)
         self.fig[1].set_title(self.title_2, fontweight="bold")
-        self.fig[1].grid(color='black', ls = '-.', lw = 0.2)
+        self.fig[1].grid(color='black', ls = '-.', lw = 0.3)
 
     def plot(self, x, y, i, marker, label_data, color, markeredgewidth, markersize):
         self.fig[i].plot(x=x, y=y, marker = marker, label = label_data, color = color, markeredgewidth = markeredgewidth, markersize = markersize)
