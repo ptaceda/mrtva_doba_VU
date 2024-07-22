@@ -23,7 +23,6 @@ def separate_dicom_file(dicom_path):
     
     images['Acq_time'] = ds[0x0018, 0x1242].value*0.001
     images['Acq_date'] = ds[0x0008, 0x0022].value
-    print(images['Acq_date'])
 
     # Assuming the order in the pixel_array is known and consistent
     images['Head1_EM'] = pixel_array[0]
