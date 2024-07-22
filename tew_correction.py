@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 def tew_correction(em_image, sc1_image, sc2_image):
     # Calculate scatter estimate as the average of the two scatter windows
     scatter_estimate = (sc1_image/(413*0.06) + sc2_image/(318*0.06)) * ((364*0.2)/2)
-    print(np.sum(scatter_estimate))
+    # print(np.sum(scatter_estimate))
     # scatter_estimate = (sc1_image + sc2_image)/2
     # plt.imshow(scatter_estimate, cmap='gray')
 
