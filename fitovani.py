@@ -40,7 +40,7 @@ def exp_md_fit(x_a_y_data):
     # Return as a numpy array
     return np.array([tau, tau_err])
 
-def lomeny_md_fit(x_a_y_data):
+def lomenny_md_fit(x_a_y_data):
     mer_cps = np.array(x_a_y_data[0])
     teor_cps = np.array(x_a_y_data[1])
     model = Model(lomenna_md_fce)
