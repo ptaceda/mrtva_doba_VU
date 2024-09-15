@@ -4,8 +4,8 @@ from lmfit import Model
 def linearni_fce(x, a):
     return a * x
 
-def kvadraticka_fce(x, a, b, c):
-    return a * x**2 + b * x + c
+def kvadraticka_fce(x, a, b):
+    return a * x**2 + b * x + 1
 
 def linearni_fit(x_a_y_data):
     aktivity = np.array(x_a_y_data[0])
@@ -66,13 +66,14 @@ def kvadr_fit(x_a_y_data):
     # Extracting the best-fit values and their errors
     a = result.params['a'].value
     b = result.params['b'].value
-    c = result.params['c'].value
+    #c = result.params['c'].value
     a_err = result.params['a'].stderr
     b_err = result.params['b'].stderr
-    c_err = result.params['c'].stderr
+    #c_err = result.params['c'].stderr
     
     # Return as a numpy array
-    return np.array([[a, b, c], [a_err, b_err, c_err]])
+    # return np.array([[a, b, c], [a_err, b_err, c_err]]) 
+    return np.array([[a, b], [a_err, b_err]])
 
 
 
