@@ -1,7 +1,7 @@
 import pydicom
 
 # Path to your DICOM file
-dicom_file_path = 'Discovery/MD_08072024_povedene/MD_08072024_Discovery.dcm'
+dicom_file_path = 'KALIBRACE_20240815/Kalibrace_tomo_20240815_Optima/Kalibrace_tomo_1_20240815_Optima.dcm'
 
 # Read the DICOM file
 try:
