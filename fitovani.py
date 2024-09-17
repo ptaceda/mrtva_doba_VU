@@ -60,7 +60,7 @@ def kvadr_fit(x_a_y_data):
     x = np.array(x_a_y_data[0])
     y = np.array(x_a_y_data[1])
     model = Model(kvadraticka_fce)
-    params = model.make_params(a=1, b=1, c=1)
+    params = model.make_params(a=1, b=1)
     result = model.fit(y, params, x=x)
 
     # Extracting the best-fit values and their errors
