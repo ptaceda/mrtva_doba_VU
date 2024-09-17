@@ -12,7 +12,7 @@ def tew_correction(em_image, sc1_image, sc2_image):
     # Ensure no negative values
     corrected_image = np.clip(corrected_image, 0, None)
 
-    return corrected_image, scatter_estimate
+    return corrected_image
 
 
 # def separate_dicom_file(dicom_path):
