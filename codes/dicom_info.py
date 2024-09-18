@@ -1,11 +1,11 @@
 import pydicom
 
 # Path to your DICOM file
-dicom_file_path = 'KALIBRACE_20240815/Kalibrace_tomo_20240815_Optima/Kalibrace_tomo_1_20240815_Optima.dcm'
+dicom_file_path = 'KALIBRACE_20240815/Kalibrace_tomo_20240815_Optima/rekonstruovane_obrazy/Optima_0_PW_SPECT_iter_2_subsets_2.dcm'
 
 # Read the DICOM file
 try:
-    dataset = pydicom.dcmread(dicom_file_path)
+    dataset = pydicom.dcmread(dicom_file_path, force=True)
     print(dataset)
     
     # Check if (0011, 1012) tag exists
