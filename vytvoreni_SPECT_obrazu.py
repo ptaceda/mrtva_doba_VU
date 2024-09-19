@@ -140,9 +140,10 @@ for path, i in zip(soubor_path_obrazu, range(len(soubor_path_obrazu))):
             save_reconstructed_image_as_tiff(reconstructed_object_TEW, tew_filename)
             print('-------')
     print(f'Hotova {i}/3 všech souboru')
+    print('-------')
 
 print('Všechno je hotovo, nyni spustit 3 příkazy:')
-print('|git add .| a počkat (bez tech |)')
+print('|git add .| a počkat (bez tech svislých čar ||, pouze text)')
 print('|git commit -am "Dodelani OPTIMA SPECTu ve formatu tiff"| a opět počkat')
 print('|git push| a opět počkat, potom by to mělo být vše a vše je odesláno na github')
 
