@@ -47,7 +47,7 @@ max_pocet_iter = 8
 min_pocet_subset = 2
 max_pocet_subset = 16
 
-output_dir = 'KALIBRACE_20240815/Kalibrace_tomo_20240815_Optima/rekonstruovane_obrazy'
+output_dir = 'KALIBRACE_20240815/Kalibrace_tomo_20240815_Optima/rekonstruovane_obrazy_tiff'
 os.makedirs(output_dir, exist_ok=True)  # Create the directory if it doesn't exist
 
 # Function to save the reconstructed image as a DICOM
@@ -133,11 +133,18 @@ for path, i in zip(soubor_path_obrazu, range(len(soubor_path_obrazu))):
             reconstructed_object_TEW = reconstruction_algorithm_TEW(n_iters=n_iter, n_subsets=n_subset)
 
             ### Uložit výsledné objekty jako DICOM soubory
-            pw_filename = f'Optima_{i}_PW_SPECT_iter_{n_iter}_subsets_{n_subset}.dcm'
-            tew_filename = f'Optima_{i}_TEW_SPECT_iter_{n_iter}_subsets_{n_subset}.dcm'
+            pw_filename = f'Discovery_{i}_PW_SPECT_iter_{n_iter}_subsets_{n_subset}.tiff'
+            tew_filename = f'Discovery_{i}_TEW_SPECT_iter_{n_iter}_subsets_{n_subset}.tiff'
 
             save_reconstructed_image_as_tiff(reconstructed_object_PW, pw_filename)
             save_reconstructed_image_as_tiff(reconstructed_object_TEW, tew_filename)
+            print('-------')
+    print(f'Hotova {i}/3 všech souboru')
+
+print('Všechno je hotovo, nyni spustit 3 příkazy:')
+print('|git add .| a počkat (bez tech |)')
+print('|git commit -am "Dodelani OPTIMA SPECTu ve formatu tiff"| a opět počkat')
+print('|git push| a opět počkat, potom by to mělo být vše a vše je odesláno na github')
 
 
 
