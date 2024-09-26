@@ -4,7 +4,7 @@ import pydicom
 
 def tew_correction(em_image, sc1_image, sc2_image):
     # Calculate scatter estimate as the average of the two scatter windows
-    scatter_estimate = (sc1_image/(413*0.06) + sc2_image/(318*0.06)) * ((364*0.2)/2)
+    scatter_estimate = (sc1_image/(0.06) + sc2_image/(0.06)) * ((0.2)/2)
 
     # Subtract scatter estimate from the EM image
     corrected_image = em_image - scatter_estimate
