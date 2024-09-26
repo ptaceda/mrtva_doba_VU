@@ -9,9 +9,6 @@ def tew_correction(em_image, sc1_image, sc2_image):
     # Subtract scatter estimate from the EM image
     corrected_image = em_image - scatter_estimate
 
-    # Ensure no negative values
-    corrected_image = np.clip(corrected_image, 0, None)
-
     return corrected_image
 
 
