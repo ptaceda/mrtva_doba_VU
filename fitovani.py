@@ -31,7 +31,7 @@ def exp_md_fce(x, tau):
 
 def lomenna_md_fce(x, tau):
     x = np.array(list(x))
-    return x / (1 - x*tau)
+    return x / (1 + x*tau)
 
 def exp_md_fit(x_a_y_data):
     teor_cps = np.array(x_a_y_data[0])
