@@ -7,8 +7,8 @@ def linearni_fce(x, a, b):
 def kvadraticka_fce(x, a, b):
     return a * x**2 + b * x + 1
 
-def polynom_6_fce(x, a, b, c, d, e):
-    return  x**6 + a * x**5 + b * x**4 + c * x**3 + d*x**2 + e*x + 1
+def polynom_6_fce(x, a, b, c, d, e, f):
+    return  a*x**6 + b * x**5 + c * x**4 + d * x**3 + e*x**2 + f*x + 1
 
 def linearni_fit(x_a_y_data):
     aktivity = np.array(x_a_y_data[0])
@@ -84,7 +84,7 @@ def pol_6_stupne_fit(x_a_y_data):
     x = np.array(x_a_y_data[0])
     y = np.array(x_a_y_data[1])
     model = Model(polynom_6_fce)
-    params = model.make_params(a=1, b=1, c=1, d=1, e=1)
+    params = model.make_params(a=1, b=1, c=1, d=1, e=1, f=1)
     result = model.fit(y, params, x=x)
 
     # Extracting the best-fit values and their errors
@@ -93,17 +93,19 @@ def pol_6_stupne_fit(x_a_y_data):
     c = result.params['c'].value
     d = result.params['d'].value
     e = result.params['e'].value
+    f = result.params['f'].value
 
     a_err = result.params['a'].stderr
     b_err = result.params['b'].stderr
     c_err = result.params['c'].stderr
     d_err = result.params['d'].stderr
     e_err = result.params['e'].stderr
+    f_err = result.params['f'].stderr
 
     
     # Return as a numpy array
     # return np.array([[a, b, c], [a_err, b_err, c_err]]) 
-    return np.array([[a, b, c, d, e], [a_err, b_err, c_err, d_err, e_err]])
+    return np.array([[a, b, c, d, e, f], [a_err, b_err, c_err, d_err, e_err, f_err]])
 
 
 
