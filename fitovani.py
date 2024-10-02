@@ -7,8 +7,8 @@ def linearni_fce(x, a, b):
 def kvadraticka_fce(x, a, b):
     return a * x**2 + b * x + 1
 
-def polynom_5_fce(x, a, b, c, d, e):
-    return a * x**5 + b * x**4 + c * x**3 + d*x**2 + e*x + 1
+def polynom_6_fce(x, a, b, c, d, e):
+    return  x**6 + a * x**5 + b * x**4 + c * x**3 + d*x**2 + e*x + 1
 
 def linearni_fit(x_a_y_data):
     aktivity = np.array(x_a_y_data[0])
