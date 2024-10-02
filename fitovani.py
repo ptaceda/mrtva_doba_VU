@@ -14,15 +14,17 @@ def linearni_fit(x_a_y_data):
     aktivity = np.array(x_a_y_data[0])
     count_rate = np.array(x_a_y_data[1])
     model = Model(linearni_fce)
-    params = model.make_params(a=1)
+    params = model.make_params(a=1, b=1)
     result = model.fit(count_rate, params, x=aktivity)
 
     # Extracting the best-fit values and their errors
     a = result.params['a'].value
+    b = result.params['b'].value
     a_err = result.params['a'].stderr
+    b_err = result.params['b'].stderr
     
     # Return as a numpy array
-    return np.array([a, a_err])
+    return np.array([a, b], [a_err, b_err])
 
 def exp_md_fce(x, tau):
     return x * np.exp(-x * tau)
