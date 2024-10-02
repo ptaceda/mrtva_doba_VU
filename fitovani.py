@@ -24,7 +24,7 @@ def linearni_fit(x_a_y_data):
     b_err = result.params['b'].stderr
     
     # Return as a numpy array
-    return np.array([a, b], [a_err, b_err])
+    return np.array([[a, b], [a_err, b_err]])
 
 def exp_md_fce(x, tau):
     return x * np.exp(-x * tau)
