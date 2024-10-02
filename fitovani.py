@@ -29,6 +29,9 @@ def linearni_fit(x_a_y_data):
 def exp_md_fce(x, tau):
     return x * np.exp(-x * tau)
 
+def exp_fce(x, a, b, c):
+    return a * np.exp(b*x**2 + c*x) + 1
+
 def lomenna_md_fce(x, tau):
     x = np.array(list(x))
     return x / (1 + x*tau)
@@ -106,6 +109,25 @@ def pol_6_stupne_fit(x_a_y_data):
     # Return as a numpy array
     # return np.array([[a, b, c], [a_err, b_err, c_err]]) 
     return np.array([[a, b, c, d, e, f], [a_err, b_err, c_err, d_err, e_err, f_err]])
+
+def exp_fce_fit(x_a_y_data):
+    x = np.array(x_a_y_data[0])
+    y = np.array(x_a_y_data[1])
+    model = Model(exp_fce)
+    params = model.make_params(a=1, b=1, c=1)
+    result = model.fit(y, params, x=x)
+
+    # Extracting the best-fit values and their errors
+    a = result.params['a'].value
+    b = result.params['b'].value
+    c = result.params['c'].value
+    a_err = result.params['a'].stderr
+    b_err = result.params['b'].stderr
+    c_err = result.params['c'].stderr
+    
+    # Return as a numpy array
+    # return np.array([[a, b, c], [a_err, b_err, c_err]]) 
+    return np.array([[a, b, c], [a_err, b_err, c_err]])
 
 
 
