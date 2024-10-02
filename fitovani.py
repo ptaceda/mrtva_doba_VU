@@ -80,10 +80,10 @@ def kvadr_fit(x_a_y_data):
     # return np.array([[a, b, c], [a_err, b_err, c_err]]) 
     return np.array([[a, b], [a_err, b_err]])
 
-def pol_5_stupne_fit(x_a_y_data):
+def pol_6_stupne_fit(x_a_y_data):
     x = np.array(x_a_y_data[0])
     y = np.array(x_a_y_data[1])
-    model = Model(polynom_5_fce)
+    model = Model(polynom_6_fce)
     params = model.make_params(a=1, b=1, c=1, d=1, e=1)
     result = model.fit(y, params, x=x)
 
