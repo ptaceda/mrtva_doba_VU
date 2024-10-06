@@ -43,7 +43,7 @@ def exp_md_fit(x_a_y_data):
     teor_cps = np.array(x_a_y_data[0])
     mer_cps = np.array(x_a_y_data[1])
     model = Model(exp_md_fce)
-    params = model.make_params(tau=0.01)
+    params = model.make_params(tau=0.00001)
     result = model.fit(mer_cps, params, x=teor_cps)
 
     # Extracting the best-fit values and their errors
