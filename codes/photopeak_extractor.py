@@ -51,10 +51,15 @@ def extract_photopeak_anterior(dicom_path, output_dir):
     print(f"Photopeak DICOM saved as {output_file}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Process DICOM files to extract photopeak window.")
-    parser.add_argument("input_dir", type=str, help="Directory containing DICOM files")
-    parser.add_argument("output_dir", type=str, help="Directory to save processed DICOM files")
-
+    # Create the argument parser
+    parser = argparse.ArgumentParser(description="Extract photopeak window from DICOM files.")
+    
+    # Add arguments for input and output directories
+    parser.add_argument("input_dir", type=str, help="Path to the directory containing DICOM files.")
+    parser.add_argument("output_dir", type=str, help="Path to the directory where extracted files will be saved.")
+    
+    # Parse the command-line arguments
     args = parser.parse_args()
-
+    
+    # Call the function with the parsed arguments
     process_dicom_directory(args.input_dir, args.output_dir)
