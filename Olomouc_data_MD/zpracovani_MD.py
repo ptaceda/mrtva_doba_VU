@@ -50,8 +50,8 @@ slope, intercept = np.polyfit(aktivity_filtered, count_rate_ant_filtered, 1)  # 
 plt.subplots(1,1, figsize=(8, 5))
 
 plt.plot(aktivity, count_rate_ant/1000, 'o', label='Anterior', color='red')
-plt.plot(aktivity, geom_prum/1000, 'd', label='Geom. průměr', color='green')
-plt.plot(aktivity, count_rate_pos/1000, '+', label='Posterior', color='blue')
+# plt.plot(aktivity, geom_prum/1000, 'd', label='Geom. průměr', color='green')
+# plt.plot(aktivity, count_rate_pos/1000, '+', label='Posterior', color='blue')
 
 # Plot the linear fit for anterior data where aktivity < 100
 plt.plot(aktivity, slope * aktivity + intercept, '--', label=f'Linear Fit (Anterior)', color='red')
