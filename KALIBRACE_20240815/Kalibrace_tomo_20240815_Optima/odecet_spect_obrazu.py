@@ -24,7 +24,7 @@ if __name__ == "__main__":
     
     # Add arguments for input and output directories
     parser.add_argument("image_SC", type=str, help="Path to the dicom image with scatter correction.")
-    parser.add_argument("Image_no_SC", type=str, help="Path to the dicom image with NO scatter correction.")
+    parser.add_argument("image_no_SC", type=str, help="Path to the dicom image with NO scatter correction.")
     
     # Parse the command-line arguments
     args = parser.parse_args()
