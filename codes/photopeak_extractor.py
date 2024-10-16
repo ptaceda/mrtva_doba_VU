@@ -40,7 +40,9 @@ def extract_photopeak_anterior(dicom_path, output_dir):
     new_ds = ds.copy()
     new_ds.PixelData = photopeak_image.tobytes()
     new_ds.NumberOfFrames = 1
-    new_ds[0x0011, 0x1050].value = ['Head1_EM']
+    new_ds[0x0011, 0x1050].value = ['Anterior PW window'] # Where Object Name
+    new_ds[0x0011, 0x1012].value = ['Anterior PW window'] # dataset name
+    new_ds[0x0011, 0x1030].value = ['Anterior PW window'] # [Picture Object Name]
 
     original_filename = os.path.basename(dicom_path)
     filename_no_ext, file_ext = os.path.splitext(original_filename)
