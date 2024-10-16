@@ -86,11 +86,18 @@ def kvadr_fit(x_a_y_data):
     # return np.array([[a, b, c], [a_err, b_err, c_err]]) 
     return np.array([[a, b], [a_err, b_err]])
 
-def pol_x_stupne_fit(x_a_y_data):
+def pol_x_stupne_fit(x_a_y_data, params_array):
     x = np.array(x_a_y_data[0])
     y = np.array(x_a_y_data[1])
     model = Model(polynom_x_stupne_fce)
-    params = model.make_params(a=1, b=2, c=1, d=1)
+    
+    # Assign parameters from the numpy array
+    params = model.make_params()
+    params['a'].value = params_array[0]
+    params['b'].value = params_array[1]
+    params['c'].value = params_array[2]
+    params['d'].value = params_array[3]
+
     result = model.fit(y, params, x=x)
 
     # Extracting the best-fit values and their errors
@@ -104,7 +111,6 @@ def pol_x_stupne_fit(x_a_y_data):
     d_err = result.params['d'].stderr
     
     # Return as a numpy array
-    # return np.array([[a, b, c], [a_err, b_err, c_err]]) 
     return np.array([[a, b, c, d], [a_err, b_err, c_err, d_err]])
 
 def pol_6_stupne_fit(x_a_y_data):
