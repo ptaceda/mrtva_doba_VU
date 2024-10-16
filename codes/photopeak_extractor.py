@@ -44,7 +44,7 @@ def extract_photopeak_anterior(dicom_path, output_dir):
 
     original_filename = os.path.basename(dicom_path)
     filename_no_ext, file_ext = os.path.splitext(original_filename)
-    new_filename = f"{filename_no_ext}_PW{file_ext}"
+    new_filename = f"{filename_no_ext}_PW_ANT{file_ext}"
 
     output_file = os.path.join(output_dir, new_filename)
     new_ds.save_as(output_file)
