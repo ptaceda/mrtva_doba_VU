@@ -11,3 +11,6 @@ Maximum	Maximum	Scalar Volume	Maximum input scalar volume voxel value within the
 Mean	Mean	Scalar Volume	Mean input scalar volume voxel value within the segment.					CodeValue:373098007|CodingSchemeDesignator:SCT|CodeMeaning:Mean	double	
 Median	Median	Scalar Volume	Median input scalar volume voxel value within the segment.					CodeValue:median|CodingSchemeDesignator:SCT|CodeMeaning:Median	double	
 Standard deviation	Standard Deviation	Scalar Volume	Standard deviation of input scalar volume voxel values within the segment.					CodeValue:386136009|CodingSchemeDesignator:SCT|CodeMeaning:Standard Deviation	double	
+Surface mm2	Surface area	Closed Surface	Surface area computed from closed surface representation.	mm2	CodeValue:000247|CodingSchemeDesignator:99CHEMINF|CodeMeaning:Surface area	CodeValue:mm2|CodingSchemeDesignator:UCUM|CodeMeaning:square millimeter			double	
+Volume mm3 (CS)	Volume (CS)	Closed Surface	Volume computed from closed surface representation.	mm3	CodeValue:118565006|CodingSchemeDesignator:SCT|CodeMeaning:Volume	CodeValue:mm3|CodingSchemeDesignator:UCUM|CodeMeaning:cubic millimeter			double	
+Volume cm3 (CS)	Volume (CS)	Closed Surface	Volume computed from closed surface representation.	cm3	CodeValue:118565006|CodingSchemeDesignator:SCT|CodeMeaning:Volume	CodeValue:cm3|CodingSchemeDesignator:UCUM|CodeMeaning:cubic centimeter			double	

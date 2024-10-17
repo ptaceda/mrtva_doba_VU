@@ -1,2 +1,2 @@
-Segment	Voxel count (LM)	Volume mm3 (LM)	Volume cm3 (LM)	Voxel count (SV)	Volume mm3 (SV)	Volume cm3 (SV)	Minimum	Maximum	Mean	Median	Standard deviation
-inj_strikacka	7754	18487	18.487	209	18010.2	18.0102	1217	4862	3089.74	3058	846.282
+Segment	Voxel count (LM)	Volume mm3 (LM)	Volume cm3 (LM)	Voxel count (SV)	Volume mm3 (SV)	Volume cm3 (SV)	Minimum	Maximum	Mean	Median	Standard deviation	Surface mm2	Volume mm3 (CS)	Volume cm3 (CS)
+inj_strikacka	8337	19876.9	19.8769	224	19302.8	19.3028	826	4862	2972.92	2942	929.378	4093.63	19785.6	19.7856
