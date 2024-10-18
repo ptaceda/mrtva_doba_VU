@@ -2,15 +2,15 @@ import pydicom
 import matplotlib.pyplot as plt
 
 # Path to your DICOM file
-dicom_file_path = 'codes\Kalibrace_plan_1_20240815_Optima_PW.dcm'
+dicom_file_path = r'C:\Users\danie\Desktop\mrtva_doba_VU\KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Optima_AC.RR_2.dcm'
 
 # Read the DICOM file
 try:
     dataset = pydicom.dcmread(dicom_file_path, force=True)
     print(dataset)
 
-    plt.imshow(dataset.pixel_array, cmap='gray')
-    plt.show()
+    # plt.imshow(dataset.pixel_array, cmap='gray')
+    # plt.show()
 
     #print(dataset.pixel_array.shape)
     #plt.subplots(2,3, figsize=(15, 10), dpi = 200)
