@@ -2,12 +2,12 @@ import pydicom
 import matplotlib.pyplot as plt
 
 # Path to your DICOM file
-dicom_file_path = r'C:\Users\danie\Desktop\mrtva_doba_VU\KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Optima_AC.RR_2.dcm'
+dicom_file_path = r'C:\Users\danie\Desktop\mrtva_doba_VU\KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Kalibrace_tomo_3_20240815_Optima.dcm'
 
 # Read the DICOM file
 try:
     dataset = pydicom.dcmread(dicom_file_path, force=True)
-    print(dataset)
+    print(dataset.pixel_array.shape)
 
     # plt.imshow(dataset.pixel_array, cmap='gray')
     # plt.show()

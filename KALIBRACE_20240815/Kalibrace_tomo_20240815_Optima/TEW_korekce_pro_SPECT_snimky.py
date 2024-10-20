@@ -76,23 +76,31 @@ def tew_correction(em_image, sc1_image, sc2_image):
 def separate_dicom_file_tomo(dicom_path):
     # Read the DICOM file
     ds = pydicom.dcmread(dicom_path)
-    print(ds)
 
     # Extract the image data (assuming it is in the PixelData field)
-    num_images = 360  # Ensure this matches your data
+    # num_images = 360  # Ensure this matches your data
     img_shape = (ds.Rows, ds.Columns)
     
     # Handle cases where the number of images might differ
     pixel_array = ds.pixel_array.reshape((num_images, *img_shape))
     
     # Separate images into 3 arrays (assuming they are ordered this way)
-    images = {
-        'PW': pixel_array[:120],
-        'USC': pixel_array[120:240],
-        'LSC': pixel_array[240:]
-    }
+    if num_images == 360:
+        images = {
+            'PW': pixel_array[:120],
+            'USC': pixel_array[120:240],
+            'LSC': pixel_array[240:]
+        }
+    else:
+        images = {
+            'PW': pixel_array[:60],
+            'USC': pixel_array[60:120],
+            'LSC': pixel_array[120:]
+        }
     
     return images
+
+num_images = 180
 
 # Load and process the DICOM file
 ds = separate_dicom_file_tomo(r"KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Kalibrace_tomo_3_20240815_Optima.dcm")
@@ -101,13 +109,22 @@ ds = separate_dicom_file_tomo(r"KALIBRACE_20240815\Kalibrace_tomo_20240815_Optim
 #plt.imshow(new_ds.pixel_array[0], cmap='gray')
 #plt.show()
 
-# Initialize corrected_images with the correct dtype
-corrected_images = np.empty((120, ds['PW'].shape[1], ds['PW'].shape[2]), dtype=np.float32)
+if num_images == 360:
+    # Initialize corrected_images with the correct dtype
+    corrected_images = np.empty((120, ds['PW'].shape[1], ds['PW'].shape[2]), dtype=np.float32)
 
-# Perform TEW correction for each image
-for i in range(120):
-    corrected_image = tew_correction(ds['PW'][i], ds['USC'][i], ds['LSC'][i])
-    corrected_images[i, :, :] = corrected_image
+    # Perform TEW correction for each image
+    for i in range(120):
+        corrected_image = tew_correction(ds['PW'][i], ds['USC'][i], ds['LSC'][i])
+        corrected_images[i, :, :] = corrected_image
+else:
+    # Initialize corrected_images with the correct dtype
+    corrected_images = np.empty((60, ds['PW'].shape[1], ds['PW'].shape[2]), dtype=np.float32)
+
+    # Perform TEW correction for each image
+    for i in range(60):
+        corrected_image = tew_correction(ds['PW'][i], ds['USC'][i], ds['LSC'][i])
+        corrected_images[i, :, :] = corrected_image
 
 # Save the corrected images to DICOM
 output_dicom_path = r"KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Kalibrace_zkouska_Optima_3_tomo.dcm"
