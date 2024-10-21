@@ -30,7 +30,7 @@ def extract_photopeak_anterior(dicom_path, output_dir):
     object_names = ds.get((0x0011, 0x1050)).value
 
     try:
-        photopeak_index = object_names.index('Head1_EM')
+        photopeak_index = object_names.index('ANT_EM')
     except ValueError:
         raise ValueError("Photopeak window 'Head1_EM' not found in object names.")
 
