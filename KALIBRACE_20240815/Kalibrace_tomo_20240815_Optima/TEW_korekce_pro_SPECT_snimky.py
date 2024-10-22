@@ -173,10 +173,7 @@ num_images = 360
 # Load and process the DICOM file
 path = r"/Users/danielptacek/Desktop/mrtva_doba_VU/KALIBRACE_20240815/Kalibrace_tomo_20240815_Optima/Kalibrace_tomo_2_20240815_Optima.dcm"
 ds = separate_dicom_file_tomo(path)
-#new_ds = pydicom.dcmread(r"KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Kalibrace_zkouska_Optima_2_tomo.dcm")
-#print(new_ds)
-#plt.imshow(new_ds.pixel_array[0], cmap='gray')
-#plt.show()
+
 
 if num_images == 360:
     # Initialize corrected_images with the correct dtype
