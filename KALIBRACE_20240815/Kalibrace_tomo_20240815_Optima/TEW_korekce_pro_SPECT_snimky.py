@@ -171,7 +171,7 @@ def separate_dicom_file_tomo(dicom_path):
 num_images = 360
 
 # Load and process the DICOM file
-path = r"/Users/danielptacek/Desktop/mrtva_doba_VU/KALIBRACE_20240815/Kalibrace_tomo_20240815_Optima/Kalibrace_tomo_2_20240815_Optima.dcm"
+path = r"/Users/danielptacek/Desktop/terapky_FNKV_I-131/NOVE_VYHODNOCENI/Stroner_Josef/20241024 Stroner/ECTCT24h_EM001_DS.dcm"
 ds = separate_dicom_file_tomo(path)
 
 
@@ -193,7 +193,7 @@ else:
         corrected_images[i, :, :] = corrected_image
 
 # Save the corrected images to DICOM
-output_dicom_path = r"/Users/danielptacek/Desktop/mrtva_doba_VU/KALIBRACE_20240815/Kalibrace_tomo_20240815_Optima/Kalibrace_TEW_Optima_2_tomo.dcm"
+output_dicom_path = r"/Users/danielptacek/Desktop/terapky_FNKV_I-131/NOVE_VYHODNOCENI/Stroner_Josef/20241024 Stroner/ECTCT24h_TEW_corrected.dcm"
 save_corrected_images_to_dicom(path, corrected_images, output_dicom_path)
 
 
