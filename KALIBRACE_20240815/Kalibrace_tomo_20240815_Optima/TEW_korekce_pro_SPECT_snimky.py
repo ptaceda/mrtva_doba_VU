@@ -53,7 +53,8 @@ def save_corrected_images_to_dicom(original_dicom_path, corrected_images, output
         del new_ds.EnergyWindowNumber  # Clear any reference to specific energy windows
 
     # Optionally, update other DICOM tags (e.g., SeriesDescription, StudyDate, etc.)
-    new_ds.SeriesDescription = "120 TEW Corrected Images"
+    new_ds.SeriesDescription = "TEW Corrected Images"
+    new_ds.DatasetName = "TEW Corrected Images"
 
     # Save the new DICOM file
     new_ds.save_as(output_dicom_path)
@@ -100,10 +101,10 @@ def separate_dicom_file_tomo(dicom_path):
     
     return images
 
-num_images = 180
+num_images = 360
 
 # Load and process the DICOM file
-ds = separate_dicom_file_tomo(r"KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Kalibrace_tomo_3_20240815_Optima.dcm")
+ds = separate_dicom_file_tomo(r"C:\Users\danie\Desktop\mrtva_doba_VU\KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Kalibrace_tomo_2_20240815_Optima.dcm")
 #new_ds = pydicom.dcmread(r"KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Kalibrace_zkouska_Optima_2_tomo.dcm")
 #print(new_ds)
 #plt.imshow(new_ds.pixel_array[0], cmap='gray')
@@ -127,7 +128,7 @@ else:
         corrected_images[i, :, :] = corrected_image
 
 # Save the corrected images to DICOM
-output_dicom_path = r"KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Kalibrace_zkouska_Optima_3_tomo.dcm"
-save_corrected_images_to_dicom(r"KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Kalibrace_tomo_3_20240815_Optima.dcm", corrected_images, output_dicom_path)
+output_dicom_path = r"C:\Users\danie\Desktop\mrtva_doba_VU\KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Kalibrace_zkouska_Optima_2_tomo.dcm"
+save_corrected_images_to_dicom(r"C:\Users\danie\Desktop\mrtva_doba_VU\KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\Kalibrace_tomo_2_20240815_Optima.dcm", corrected_images, output_dicom_path)
 
 
