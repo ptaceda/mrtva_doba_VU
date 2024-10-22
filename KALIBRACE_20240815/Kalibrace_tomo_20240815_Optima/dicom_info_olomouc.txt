@@ -1,0 +1,348 @@
+Dataset.file_meta -------------------------------
+(0002, 0000) File Meta Information Group Length  UL: 204
+(0002, 0001) File Meta Information Version       OB: b'\x00\x01'
+(0002, 0002) Media Storage SOP Class UID         UI: Nuclear Medicine Image Storage
+(0002, 0003) Media Storage SOP Instance UID      UI: 1.2.840.113619.2.280.2.1.17122022100355615.1184541980
+(0002, 0010) Transfer Syntax UID                 UI: Explicit VR Little Endian
+(0002, 0012) Implementation Class UID            UI: 1.2.840.113619.6.281
+(0002, 0013) Implementation Version Name         SH: 'Xeleris 4.1200'
+(0002, 0016) Source Application Entity Title     AE: 'D310382'
+-------------------------------------------------
+(0008, 0000) Group Length                        UL: 524
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0008) Image Type                          CS: ['ORIGINAL', 'PRIMARY', 'TOMO', 'EMISSION']
+(0008, 0012) Instance Creation Date              DA: '20221217'
+(0008, 0013) Instance Creation Time              TM: '163111.0000'
+(0008, 0014) Instance Creator UID                UI: 1.2.840.113619.6.281
+(0008, 0016) SOP Class UID                       UI: Nuclear Medicine Image Storage
+(0008, 0018) SOP Instance UID                    UI: 1.2.840.113619.2.280.2.1.17122022100355615.1184541980
+(0008, 0020) Study Date                          DA: '20221217'
+(0008, 0021) Series Date                         DA: '20221217'
+(0008, 0022) Acquisition Date                    DA: '20221217'
+(0008, 0023) Content Date                        DA: '20221217'
+(0008, 0030) Study Time                          TM: '094809.00'
+(0008, 0031) Series Time                         TM: '100500.00'
+(0008, 0032) Acquisition Time                    TM: '100500.00'
+(0008, 0033) Content Time                        TM: '100500.00'
+(0008, 0050) Accession Number                    SH: ''
+(0008, 0060) Modality                            CS: 'NM'
+(0008, 0070) Manufacturer                        LO: 'GE MEDICAL SYSTEMS'
+(0008, 0080) Institution Name                    LO: 'FN_Olomouc'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0008, 1010) Station Name                        SH: 'D670NM'
+(0008, 1030) Study Description                   LO: 'Thyroid 131I'
+(0008, 103e) Series Description                  LO: 'valec - tomo 5ml'
+(0008, 1060) Name of Physician(s) Reading Study  PN: ''
+(0008, 1070) Operators' Name                     PN: ''
+(0008, 1090) Manufacturer's Model Name           LO: 'Tandem_Discovery_670'
+(0009, 0000) Private Creator                     UL: 380
+(0009, 0010) Private tag data                    LO: 'GEMS_GENIE_1'
+(0009, 1001) [Unknown]                           SH: 'GEMS_GENIE'
+(0009, 1010) [Study Name]                        LO: 'Thyroid 131I'
+(0009, 1011) [Study Flags]                       SL: 129
+(0009, 1012) [Study Type]                        SL: 0
+(0009, 101e) [Dataset UID]                       UI: ''
+(0009, 1020) [Series Object Name]                LO: 'valec - tomo 5ml'
+(0009, 1021) [Series Flags]                      SL: 1
+(0009, 1022) [User Orientation]                  SH: ''
+(0009, 1023) [Initiation Type]                   SL: 0
+(0009, 1024) [Initiation Delay]                  SL: 0
+(0009, 1025) [Initiation Count Rate]             SL: 0
+(0009, 1026) [Number Energy Sets]                SL: 2
+(0009, 1027) [Number Detectors]                  SL: 1
+(0009, 1028) [Number RR Windows]                 SL: 0
+(0009, 1029) [Number MG Time Slots]              SL: 0
+(0009, 102a) [Number View Sets]                  SL: 1
+(0009, 102b) [Trigger History UID]               LO: ''
+(0009, 102c) [Series Comments]                   LO: ''
+(0009, 102e) [Distance Prescribed]               FD: 0.0
+(0009, 102f) [Table Direction]                   SL: 0
+(0009, 1033) [Rotational Continuous Speed]       FD: 0.0
+(0009, 1035) [Gantry Locus Type]                 UL: 0
+(0009, 1040) [Patient Object Name]               PN: 'zzz - kalibrace 131I^D670^^^'
+(0009, 1041) [Patient Flags]                     SL: 1
+(0009, 1042) [Patient Creation Date]             DA: ''
+(0009, 1043) [Patient Creation Time]             TM: ''
+(0009, 1045) [Unknown]                           LT: '**\\**'
+(0010, 0000) Group Length                        UL: 134
+(0010, 0010) Patient's Name                      PN: 'zzz - kalibrace 131I^D670^^^'
+(0010, 0020) Patient ID                          LO: 'zzz - QC crosscalib'
+(0010, 0030) Patient's Birth Date                DA: ''
+(0010, 0040) Patient's Sex                       CS: 'O'
+(0010, 1000) Other Patient IDs                   LO: ''
+(0010, 1001) Other Patient Names                 PN: ''
+(0010, 1020) Patient's Size                      DS: '0.0'
+(0010, 1030) Patient's Weight                    DS: '0.0'
+(0010, 2160) Ethnic Group                        SH: ''
+(0010, 2180) Occupation                          SH: ''
+(0011, 0000) Private Creator                     UL: 1068
+(0011, 0010) Private tag data                    LO: 'GEMS_GENIE_1'
+(0011, 100a) [Series Type]                       SL: 9
+(0011, 100b) [Effective Series Duration]         SL: 2400000
+(0011, 100c) [Num Beats]                         SL: 0
+(0011, 100d) [Radio Nuclide Name]                LO: 'Iodine131'
+(0011, 1010) [Dataset Object Name]               LO: ''
+(0011, 1011) [Dataset Modified]                  SL: [0, 0]
+(0011, 1012) [Dataset Name]                      LO: ['valec - tomo 5ml_EM', 'valec - tomo 5ml_SC']
+(0011, 1013) [Dataset Type]                      SL: 12
+(0011, 1014) [Completion Time]                   LO: ''
+(0011, 1015) [Detector Number]                   SL: [1, 1]
+(0011, 1016) [Energy Number]                     SL: [1, 2]
+(0011, 1017) [RR Interval Window Number]         SL: [0, 0]
+(0011, 1018) [MG Bin Number]                     SL: [0, 0]
+(0011, 1019) [Radius Of Rotation]                FD: [0.0, 0.0]
+(0011, 101a) [Detector Count Zone]               SL: [0, 0]
+(0011, 101f) [Image Orientation]                 SL: [0, 0]
+(0011, 1026) [Table Orientation]                 SL: [0, 0]
+(0011, 1027) [ROI Top Left]                      SL: [0, 0, 0, 0]
+(0011, 1028) [ROI Bottom Right]                  SL: [0, 0, 0, 0]
+(0011, 102c) [View X Adjustment]                 FD: [0.0, 0.0]
+(0011, 102d) [View Y Adjustment]                 FD: [0.0, 0.0]
+(0011, 102e) [Pixel Overflow Flag]               SL: [0, 0]
+(0011, 102f) [Overflow Level]                    SL: [32767, 32767]
+(0011, 1030) [Picture Object Name]               LO: ['valec - tomo 5ml_EM', 'valec - tomo 5ml_SC']
+(0011, 1031) [Acquisition Parent UID]            LO: ['1.2.840.113619.2.280.2.1.17122022100355254.1776870014', '1.2.840.113619.2.280.2.1.17122022100355254.1776870014']
+(0011, 1032) [Processing Parent UID]             LO: ['**', '**']
+(0011, 1033) [Energy Correct Name]               LO: ['**', '**']
+(0011, 1034) [Spatial Correct Name]              LO: ['', '**']
+(0011, 1035) [Tuning Calib Name]                 LO: ['**', '**']
+(0011, 1036) [Uniformity Correct Name]           LO: ['**', '**']
+(0011, 1037) [Acquisition Specific Correction Na LT: '**\\**'
+(0011, 1038) [Byte Order]                        SL: [108, 108]
+(0011, 1039) [Compression Type]                  SL: [0, 0]
+(0011, 103a) [Picture Format]                    SL: [0, 0]
+(0011, 103b) [Pixel Scale]                       FD: [1.0, 1.0]
+(0011, 103c) [Pixel Offset]                      FD: [0.0, 0.0]
+(0011, 103f) [Dataset Flags]                     SL: [257, 257]
+(0011, 1040) [Viewing Object Name]               LO: ['current', 'current']
+(0011, 1041) [Orientation Angle]                 SL: [0, 0]
+(0011, 1042) [Rotation Angle]                    FD: [0.0, 0.0]
+(0011, 1043) [Window Inverse Flag]               SL: [0, 0]
+(0011, 1044) [Threshold Center]                  FD: [2048.0, 2048.0]
+(0011, 1045) [Threshold Width]                   FD: [4096.0, 4096.0]
+(0011, 1046) [Interpolation Type]                SL: [2, 2]
+(0011, 1050) [Where Object Name]                 LO: ['valec - tomo 5ml_EM', 'valec - tomo 5ml_SC']
+(0011, 1055) [Period]                            FD: [1.0, 1.0]
+(0011, 1056) [Elapsed Time]                      FD: [1.0, 1.0]
+(0011, 1057) [FOV]                               FD: [564.941312, 564.941312, 564.941312, 564.941312]
+(0013, 0000) Private Creator                     UL: 128
+(0013, 0010) Private tag data                    LO: 'GEMS_GENIE_1'
+(0013, 1010) [Digital FOV]                       FD: [0.0, 0.0, 0.0, 0.0]
+(0013, 1011) [Source Translator]                 SL: 4
+(0013, 1012) [RAL Flags]                         SL: [0, 0]
+(0013, 1015) [Fscalar]                           FD: [0.0, 0.0]
+(0013, 101b) [Det Ang Separation]                FD: 0.0
+(0015, 0000) Private Creator                     UL: 44
+(0015, 0010) Private tag data                    LO: 'GEMS_GENIE_1'
+(0015, 1012) [Num ECT Phases]                    SL: 0
+(0015, 1013) [Num WB Scans]                      SL: 1
+(0018, 0000) Group Length                        UL: 154
+(0018, 0015) Body Part Examined                  CS: 'CHEST'
+(0018, 0070) Counts Accumulated                  IS: '5347585'
+(0018, 0071) Acquisition Termination Condition   CS: 'TIME'
+(0018, 1000) Device Serial Number                LO: '21337'
+(0018, 1020) Software Versions                   LO: ['1.003.611.0', 'HARDWARE_VERSION_1']
+(0018, 1030) Protocol Name                       LO: 'User&Endocrine&Thyroid 131I'
+(0018, 1061) Trigger Source or Type              LO: 'EKG'
+(0018, 1243) Count Rate                          IS: '2306'
+(0020, 0000) Group Length                        UL: 274
+(0020, 000d) Study Instance UID                  UI: 1.2.840.113619.2.280.2.1.17122022083010308.370686000
+(0020, 000e) Series Instance UID                 UI: 1.2.840.113619.2.280.2.1.17122022100356074.1788420466
+(0020, 0010) Study ID                            SH: 'Thyroid 131I'
+(0020, 0011) Series Number                       IS: '1'
+(0020, 0013) Instance Number                     IS: None
+(0020, 0052) Frame of Reference UID              UI: 1.2.840.113619.2.280.2.1.17122022100355254.1486512952
+(0020, 1040) Position Reference Indicator        LO: ''
+(0020, 4000) Image Comments                      LT: Array of 35 elements
+(0028, 0000) Group Length                        UL: 210
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME2'
+(0028, 0008) Number of Frames                    IS: '240'
+(0028, 0009) Frame Increment Pointer             AT: [(0054, 0010), (0054, 0020), (0054, 0050), (0054, 0090)]
+(0028, 0010) Rows                                US: 128
+(0028, 0011) Columns                             US: 128
+(0028, 0030) Pixel Spacing                       DS: [4.413604, 4.413604]
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 16
+(0028, 0102) High Bit                            US: 15
+(0028, 0103) Pixel Representation                US: 0
+(0028, 0106) Smallest Image Pixel Value          US: 0
+(0028, 0107) Largest Image Pixel Value           US: 1173
+(0028, 1050) Window Center                       DS: '586.5'
+(0028, 1051) Window Width                        DS: '1173.0'
+(0033, 0000) Private Creator                     UL: 1334
+(0033, 0010) Private tag data                    LO: 'GEMS_XELPRV_01'
+(0033, 0011) Private tag data                    LO: 'GEMS_GENIE_1'
+(0033, 1070)  [SeriesdataSQ]  2 item(s) ---- 
+   (0033, 0010) Private Creator                     LO: 'GEMS_XELPRV_01'
+   (0033, 1008) [Object Type]                       CS: 'SERIES DATA'
+   (0033, 1010) [Modified]                          SL: 0
+   (0033, 1011) [Name]                              LO: 'XELERIS_APPS'
+   (0033, 1016) [ProtocolDataUID]                   LO: '1.2.840.113619.2.280.2.1.17122022100356086.1478864735'
+   (0033, 1017) [Date]                              SH: '20221217'
+   (0033, 1018) [Time]                              SH: '100355'
+   (0033, 1019) [ProtocoldataFlags]                 UL: 0
+   (0033, 101a) [ProtocolName]                      LO: 'Tandem_Discovery_670'
+   (0033, 101b) [StudyId]                           LO: ''
+   (0033, 101c) [BulkData]                          OB: None
+   (0033, 101f) [StringData]                        OB: Array of 90 elements
+   (0033, 1023) [StringDataFormat]                  OB: b'Active_apps\\4\x00'
+   (0033, 1024) [Description]                       LT: Array of 51 elements
+   (0033, 1071) [SDOSOPClassUID]                    UI: 1.2.840.113619.4.17
+   (0033, 1072) [SDOSOPInstanceUID]                 UI: 1.2.840.113619.2.280.2.1.17122022100356086.1478864735
+   ---------
+   (0033, 0010) Private Creator                     LO: 'GEMS_XELPRV_01'
+   (0033, 1008) [Object Type]                       CS: 'SERIES DATA'
+   (0033, 1010) [Modified]                          SL: 0
+   (0033, 1011) [Name]                              LO: 'CameraSensitivity'
+   (0033, 1016) [ProtocolDataUID]                   LO: '1.2.840.113619.2.280.2.1.17122022100356102.1172057171'
+   (0033, 1017) [Date]                              SH: '20221217'
+   (0033, 1018) [Time]                              SH: '100355'
+   (0033, 1019) [ProtocoldataFlags]                 UL: 0
+   (0033, 101a) [ProtocolName]                      LO: 'CameraSensitivity'
+   (0033, 101b) [StudyId]                           LO: ''
+   (0033, 101c) [BulkData]                          OB: None
+   (0033, 101e) [DoubleData]                        FD: [0.0, 0.0, 694680.0, 694680.0]
+   (0033, 101f) [StringData]                        OB: Array of 120 elements
+   (0033, 1022) [DoubleDataFormat]                  OB: Array of 30 elements
+   (0033, 1023) [StringDataFormat]                  OB: Array of 30 elements
+   (0033, 1024) [Description]                       LT: Array of 57 elements
+   (0033, 1071) [SDOSOPClassUID]                    UI: 1.2.840.113619.4.17
+   (0033, 1072) [SDOSOPInstanceUID]                 UI: 1.2.840.113619.2.280.2.1.17122022100356102.1172057171
+   ---------
+(0033, 1107) [Orig SOP Instance UID]             LO: ['1.2.840.113619.2.280.2.1.17122022100355615.1184541980', '1.2.840.113619.2.280.2.1.17122022100355615.1184541980.1']
+(0040, 0000) Group Length                        UL: 12
+(0040, 0253) Performed Procedure Step ID         SH: 'L_1'
+(0054, 0000) Group Length                        UL: 3006
+(0054, 0010) Energy Window Vector                US: Array of 240 elements
+(0054, 0011) Number of Energy Windows            US: 2
+(0054, 0012)  Energy Window Information Sequence  2 item(s) ---- 
+   (0054, 0013)  Energy Window Range Sequence  1 item(s) ---- 
+      (0054, 0014) Energy Window Lower Limit           DS: '327.6'
+      (0054, 0015) Energy Window Upper Limit           DS: '400.4'
+      ---------
+   (0054, 0018) Energy Window Name                  SH: 'I131_EM'
+   ---------
+   (0054, 0013)  Energy Window Range Sequence  1 item(s) ---- 
+      (0054, 0014) Energy Window Lower Limit           DS: '267.3'
+      (0054, 0015) Energy Window Upper Limit           DS: '326.7'
+      ---------
+   (0054, 0018) Energy Window Name                  SH: 'I131_SC'
+   ---------
+(0054, 0016)  Radiopharmaceutical Information Sequence  1 item(s) ---- 
+   (0018, 0031) Radiopharmaceutical                 LO: 'Sodium iodide I131'
+   (0018, 1071) Radiopharmaceutical Volume          DS: '0.0'
+   (0018, 1074) Radionuclide Total Dose             DS: '0.0'
+   (0054, 0300)  Radionuclide Code Sequence  1 item(s) ---- 
+      (0008, 0100) Code Value                          SH: 'C-114B1'
+      (0008, 0102) Coding Scheme Designator            SH: '99SDM'
+      (0008, 0104) Code Meaning                        LO: '^131^Iodine'
+      ---------
+   (0054, 0304)  Radiopharmaceutical Code Sequence  1 item(s) ---- 
+      (0008, 0100) Code Value                          SH: 'C-B1086'
+      (0008, 0102) Coding Scheme Designator            SH: 'SRT'
+      (0008, 0104) Code Meaning                        LO: 'Sodium iodide I^131^'
+      ---------
+   ---------
+(0054, 0020) Detector Vector                     US: Array of 240 elements
+(0054, 0021) Number of Detectors                 US: 1
+(0054, 0022)  Detector Information Sequence  1 item(s) ---- 
+   (0018, 1120) Gantry/Detector Tilt                DS: '0.0'
+   (0018, 1145) Center of Rotation Offset           DS: '0.0'
+   (0018, 1147) Field of View Shape                 CS: ''
+   (0018, 1149) Field of View Dimension(s)          IS: [0, 0]
+   (0018, 1180) Collimator/grid Name                SH: 'HEGP'
+   (0018, 1181) Collimator Type                     CS: 'PARA'
+   (0018, 1182) Focal Distance                      IS: '0'
+   (0018, 1183) X Focus Center                      DS: '0.0'
+   (0018, 1184) Y Focus Center                      DS: '0.0'
+   (0020, 0032) Image Position (Patient)            DS: [-276.863854, -272.363854, 280.263854]
+   (0020, 0037) Image Orientation (Patient)         DS: [0.999903, -0.013962, 0.000000, 0.000000, 0.000000, -1.000000]
+   (0028, 0031) Zoom Factor                         DS: [1.000000, 1.000000]
+   (0028, 0032) Zoom Center                         DS: [0.000000, 0.000000]
+   ---------
+(0054, 0050) Rotation Vector                     US: Array of 240 elements
+(0054, 0051) Number of Rotations                 US: 1
+(0054, 0052)  Rotation Information Sequence  1 item(s) ---- 
+   (0018, 1130) Table Height                        DS: '137.6'
+   (0018, 1131) Table Traverse                      DS: '400.0'
+   (0018, 1140) Rotation Direction                  CS: 'CC'
+   (0018, 1142) Radial Position                     DS: '186.883'
+   (0018, 1143) Scan Arc                            DS: '360.0'
+   (0018, 1144) Angular Step                        DS: '3.0'
+   (0018, 1242) Actual Frame Duration               IS: '20000'
+   (0054, 0053) Number of Frames in Rotation        US: 120
+   (0054, 0200) Start Angle                         DS: '180.8'
+   ---------
+(0054, 0090) Angular View Vector                 US: Array of 240 elements
+(0054, 0202) Type of Detector Motion             CS: 'STEP AND SHOOT'
+(0054, 0400) Image ID                            SH: 'valec - tomo 5ml'
+(0054, 0410)  Patient Orientation Code Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'F-10450'
+   (0008, 0102) Coding Scheme Designator            SH: '99SDM'
+   (0008, 0104) Code Meaning                        LO: 'recumbent'
+   (0054, 0412)  Patient Orientation Modifier Code Sequence  1 item(s) ---- 
+      (0008, 0100) Code Value                          SH: 'F-10340'
+      (0008, 0102) Coding Scheme Designator            SH: '99SDM'
+      (0008, 0104) Code Meaning                        LO: 'supine'
+      ---------
+   ---------
+(0054, 0414)  Patient Gantry Relationship Code Sequence  1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'F-10480'
+   (0008, 0102) Coding Scheme Designator            SH: '99SDM'
+   (0008, 0104) Code Meaning                        LO: 'feet-first'
+   ---------
+(0055, 0000) Private Creator                     UL: 3544
+(0055, 0010) Private tag data                    LO: 'GEMS_GENIE_1'
+(0055, 1012)  [Xeleris Energy Window Information Sequence]  2 item(s) ---- 
+   (0055, 0010) Private Creator                     LO: 'GEMS_GENIE_1'
+   (0055, 1013)  [Xeleris Energy Window Range Sequence]  1 item(s) ---- 
+      (0011, 0010) Private Creator                     LO: 'GEMS_GENIE_1'
+      (0011, 101c) [Energy Offset]                     SL: 0
+      (0011, 101d) [Energy Range]                      SL: 0
+      (0013, 0010) Private Creator                     LO: 'GEMS_GENIE_1'
+      (0013, 1016) [AutoTrack Peak]                    SL: 0
+      (0013, 1017) [AutoTrack Width]                   SL: 0
+      ---------
+   ---------
+   (0055, 0010) Private Creator                     LO: 'GEMS_GENIE_1'
+   (0055, 1013)  [Xeleris Energy Window Range Sequence]  1 item(s) ---- 
+      (0011, 0010) Private Creator                     LO: 'GEMS_GENIE_1'
+      (0011, 101c) [Energy Offset]                     SL: 0
+      (0011, 101d) [Energy Range]                      SL: 0
+      (0013, 0010) Private Creator                     LO: 'GEMS_GENIE_1'
+      (0013, 1016) [AutoTrack Peak]                    SL: 0
+      (0013, 1017) [AutoTrack Width]                   SL: 0
+      ---------
+   ---------
+(0055, 1022)  [Xeleris Detector Information Sequence]  1 item(s) ---- 
+   (0011, 0010) Private Creator                     LO: 'GEMS_GENIE_1'
+   (0011, 1023) [Use FOV Mask]                      SL: 0
+   (0011, 1024) [FOV Mask Y Cutoff Distance]        SL: 0
+   (0011, 1025) [FOV Mask Cutoff Angle]             SL: 0
+   (0011, 1029) [Uniformity Mean]                   SL: 0
+   (0011, 103e) [FOV Shape]                         SL: 13
+   (0013, 0010) Private Creator                     LO: 'GEMS_GENIE_1'
+   (0013, 1018) [Transmission Scan Time]            FD: 0.0
+   (0013, 1019) [Transmission Mask Width]           FD: 0.0
+   (0013, 101a) [Copper Attenuator Thickness]       FD: 0.0
+   (0013, 101e) [Tomo View Offset]                  FD: Array of 360 elements
+   (0035, 0010) Private Creator                     LO: 'GEMS_GENIE_1'
+   (0035, 1001) [Start Angle]                       FD: 0.8000000000000114
+   ---------
+(0055, 1052)  [Xeleris Rotation Information Sequence]  1 item(s) ---- 
+   (0013, 0010) Private Creator                     LO: 'GEMS_GENIE_1'
+   (0013, 101c) [Axial Acceptance Angle]            SL: 0
+   (0013, 101d) [Theta Acceptance Value]            SL: 0
+   (0015, 0010) Private Creator                     LO: 'GEMS_GENIE_1'
+   (0015, 1014) [ECT Phase Num]                     SL: 0
+   (0015, 1015) [WB Scan Num]                       SL: 1
+   (0015, 1016) [Comb Head Number]                  SL: 0
+   ---------
+(0055, 1065)  [Unknown]  2 item(s) ---- 
+
+   ---------
+
+   ---------
+(7fe0, 0000) Group Length                        UL: 7864332
+(7fe0, 0010) Pixel Data                          OW: Array of 7864320 elements
