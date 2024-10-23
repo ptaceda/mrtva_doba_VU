@@ -2,37 +2,34 @@ import pydicom
 import matplotlib.pyplot as plt
 
 # Path to your DICOM file
-dicom_file_path = r'/Users/danielptacek/Desktop/terapky_FNKV_I-131/NOVE_VYHODNOCENI/Stroner_Josef/20241024 Stroner/ECTCT24h_EM_IRACRR001_DS.dcm'
+dicom_file_path = r'/Users/danielptacek/Desktop/terapky_FNKV_I-131/NOVE_VYHODNOCENI/Stroner_Josef/20241024 Stroner/Statiky/ANT_EM002_DS.dcm'
 
 # Read the DICOM file
 try:
     dataset = pydicom.dcmread(dicom_file_path, force=True)
     print(dataset)
 
-    # plt.imshow(dataset.pixel_array, cmap='gray')
-    # plt.show()
-
-    #print(dataset.pixel_array.shape)
-    #plt.subplots(2,3, figsize=(15, 10), dpi = 200)
-    #plt.subplot(231)
-    #plt.imshow(dataset.pixel_array[0,:,:], cmap='gray')
-    #plt.axis('off')
-    #plt.subplot(232)
-    #plt.imshow(dataset.pixel_array[1,:,:], cmap='gray')
-    #plt.axis('off')
-    #plt.subplot(233)
-    #plt.imshow(dataset.pixel_array[2,:,:], cmap='gray')
-    #plt.axis('off')
-    #plt.subplot(234)
-    #plt.imshow(dataset.pixel_array[3,:,:], cmap='gray')
-    #plt.axis('off')
-    #plt.subplot(235)
-    #plt.imshow(dataset.pixel_array[4,:,:], cmap='gray')
-    #plt.axis('off')
-    #plt.subplot(236)
-    #plt.imshow(dataset.pixel_array[5,:,:], cmap='gray')
-    #plt.axis('off')
-    #plt.show()
+    print(dataset.pixel_array.shape)
+    plt.subplots(2,3, figsize=(15, 10), dpi = 200)
+    plt.subplot(231)
+    plt.imshow(dataset.pixel_array[0], cmap='gray')
+    plt.axis('off')
+    plt.subplot(232)
+    plt.imshow(dataset.pixel_array[2], cmap='gray')
+    plt.axis('off')
+    plt.subplot(233)
+    plt.imshow(dataset.pixel_array[4], cmap='gray')
+    plt.axis('off')
+    plt.subplot(234)
+    plt.imshow(dataset.pixel_array[1], cmap='gray')
+    plt.axis('off')
+    plt.subplot(235)
+    plt.imshow(dataset.pixel_array[3], cmap='gray')
+    plt.axis('off')
+    plt.subplot(236)
+    plt.imshow(dataset.pixel_array[5], cmap='gray')
+    plt.axis('off')
+    plt.show()
     
     # # Check if (0011, 1012) tag exists
     # if (0x0011, 0x1012) in dataset:
