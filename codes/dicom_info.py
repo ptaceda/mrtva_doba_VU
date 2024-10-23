@@ -2,7 +2,7 @@ import pydicom
 import matplotlib.pyplot as plt
 
 # Path to your DICOM file
-dicom_file_path = r'/Users/danielptacek/Desktop/terapky_FNKV_I-131/NOVE_VYHODNOCENI/Stroner_Josef/20241024 Stroner/Statiky/ANT_EM002_DS.dcm'
+dicom_file_path = r'C:\Users\danie\Desktop\mrtva_doba_VU\KALIBRACE_20240815\Kalibrace_tomo_20240815_Optima\TEW_od_GE\Optima 3 kalibrace\1.2.840.113619.2.280.2.1.15082024162739002.1927335621\TomoKal3aCT_EM_IRACSCRR001_DS.dcm'
 
 # Read the DICOM file
 try:
@@ -12,22 +12,22 @@ try:
     print(dataset.pixel_array.shape)
     plt.subplots(2,3, figsize=(15, 10), dpi = 200)
     plt.subplot(231)
-    plt.imshow(dataset.pixel_array[0], cmap='gray')
+    plt.imshow(dataset.pixel_array[55], cmap='gray')
     plt.axis('off')
     plt.subplot(232)
-    plt.imshow(dataset.pixel_array[2], cmap='gray')
+    plt.imshow(dataset.pixel_array[57], cmap='gray')
     plt.axis('off')
     plt.subplot(233)
-    plt.imshow(dataset.pixel_array[4], cmap='gray')
+    plt.imshow(dataset.pixel_array[59], cmap='gray')
     plt.axis('off')
     plt.subplot(234)
-    plt.imshow(dataset.pixel_array[1], cmap='gray')
+    plt.imshow(dataset.pixel_array[61], cmap='gray')
     plt.axis('off')
     plt.subplot(235)
-    plt.imshow(dataset.pixel_array[3], cmap='gray')
+    plt.imshow(dataset.pixel_array[63], cmap='gray')
     plt.axis('off')
     plt.subplot(236)
-    plt.imshow(dataset.pixel_array[5], cmap='gray')
+    plt.imshow(dataset.pixel_array[73], cmap='gray')
     plt.axis('off')
     plt.show()
     
