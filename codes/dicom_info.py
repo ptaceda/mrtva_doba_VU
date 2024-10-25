@@ -2,7 +2,7 @@ import pydicom
 import matplotlib.pyplot as plt
 
 # Path to your DICOM file
-dicom_file_path = r'C:\Users\danie\Desktop\terapky_FNKV_I-131\NOVE_VYHODNOCENI\Stroner_Josef\20241024 Stroner\Statiky\ANT_EM001_DS.dcm'
+dicom_file_path = r'C:\Users\danie\Desktop\terapky_FNKV_I-131\NOVE_VYHODNOCENI\Stroner_Josef\Stroner_Josef_pro_TK\ANT_EM007_DS.dcm'
 
 # Read the DICOM file
 try:
