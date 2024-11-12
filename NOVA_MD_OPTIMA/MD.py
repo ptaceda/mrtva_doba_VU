@@ -99,7 +99,7 @@ for folder in folders:
     # kapsle_LSC_2_prikon_impulsu = np.sum(maska_2 * kapsle_LSC_2)/cas_akvizice_kapsle
     # kapsle_USC_2_prikon_impulsu = np.sum(maska_2 * kapsle_USC_2)/cas_akvizice_kapsle
 
-    ### Aplikace masky na jednotlive snimky
+    ### Pocitani pro cele FOV
     kapsle_PW_1_prikon_impulsu = np.sum(kapsle_PW_1)/cas_akvizice_kapsle
     kapsle_LSC_1_prikon_impulsu = np.sum(kapsle_LSC_1)/cas_akvizice_kapsle
     kapsle_USC_1_prikon_impulsu = np.sum(kapsle_USC_1)/cas_akvizice_kapsle
